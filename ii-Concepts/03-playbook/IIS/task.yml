@@ -1,0 +1,29 @@
+---
+-
+# Above - sign indicates a list item. 
+ 
+  # Target: where our play will run and options it will run with
+  hosts: wingrp
+  #gather_facts: false
+
+  # Variable: variables that will apply to the play, on all target systems
+  vars: 
+
+  # Task: the list of tasks that will be executed within the playbook
+  tasks:
+    - name: Install IIS Web-Server with sub features and management tools
+      win_feature:
+        name: Web-Server 
+        state: present
+        include_sub_features: yes
+        include_management_tools: yes
+      register: win_feature
+      
+    
+  # Handlers: handlers that are executed as a notify key from a task
+
+  # Roles: list of roles to be imported into the play
+
+# Three dots indicate the end of a YAML document
+#ansible-playbook 01tasks.yml.yml
+...
