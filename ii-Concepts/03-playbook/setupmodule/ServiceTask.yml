@@ -11,7 +11,7 @@
 
   # Task: the list of tasks that will be executed witin the playbook
   vars_files:
-    - EXT_variable.yml
+    - Ext_variable.yml
   tasks:
    - name: Start service BITS, if not started
      win_service:
