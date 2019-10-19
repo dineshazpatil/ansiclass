@@ -13,8 +13,8 @@
   tasks:
     - name: Stop Service Task
       win_service:
-      name: BITS
-      state: stopped
+        name: BITS
+        state: stopped
         
       
             
