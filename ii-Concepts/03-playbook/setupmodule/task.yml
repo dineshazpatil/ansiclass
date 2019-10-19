@@ -11,7 +11,7 @@
 
   # Task: the list of tasks that will be executed within the playbook
   tasks:
-    - name: Add New Folder in System
+    - name: Collect deatils from
       setup :
         fact_path ='c:\custom_facts' 
               
