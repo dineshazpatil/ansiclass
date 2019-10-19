@@ -1,4 +1,4 @@
 ---
 servicesneedstodisable:
-   [Bits,Windows Audio]
+   [Bits,Windows Audio,Dnscache]
 ...   

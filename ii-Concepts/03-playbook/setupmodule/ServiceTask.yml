@@ -16,9 +16,8 @@
    - name: Start service BITS, if not started
      win_service:
       name: "{{item}}"
-      state: Started
-     loop:
-      "{{servicesneedstodisable}}"   
+      
+    
         
       
             
