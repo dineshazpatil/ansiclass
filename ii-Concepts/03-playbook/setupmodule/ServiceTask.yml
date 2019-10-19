@@ -12,7 +12,7 @@
   # Task: the list of tasks that will be executed within the playbook
   tasks:
     - name: Stop Service Task
-      service:
+      win_service:
       name: BITS
       state: stopped
         
