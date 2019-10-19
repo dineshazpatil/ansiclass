@@ -11,10 +11,10 @@
 
   # Task: the list of tasks that will be executed witin the playbook
   tasks:
-    - name: Stop Service Task
-      win_service:
-       name: BITS
-       state: stopped
+   - name: Start service httpd, if not started
+     win_service:
+      name: BITS
+      state: Stopped
         
       
             
