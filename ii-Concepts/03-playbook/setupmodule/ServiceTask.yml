@@ -3,7 +3,7 @@
 # Above - sign indicates a list item. 
  
   # Target: where our play will run and options it will run with
-  hosts: Windows
+  hosts: wingrp
   #gather_facts: false
 
   # Variable: variables that will apply to the play, on all target systems
@@ -11,8 +11,10 @@
 
   # Task: the list of tasks that will be executed within the playbook
   tasks:
-    - name: Collect deatils from
-      setup:
+    - name: Stop Service Task
+      service:
+      name: BITS
+      state: stopped
         
       
             
