@@ -15,7 +15,7 @@
   tasks:
    - name: Start service BITS, if not started
      win_service:
-      name: "{{servicesneedstodisable}}"
+      name: "{{servicesneedstodisable[0]}}"
       state: Stopped
         
       
