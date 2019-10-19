@@ -1,4 +1,4 @@
 ---
 servicesneedstodisable:
-   [Bits,Spooler,Windows Audio]
+   [Bits,Windows Audio]
 ...   
