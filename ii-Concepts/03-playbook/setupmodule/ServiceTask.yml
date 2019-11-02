@@ -17,7 +17,7 @@
       win_service:
        name: "{{item}}"
        state: > 
-                 {% if "Bits" == "Bits" -%}
+                 {% if "Bits" == "{{item}}" -%}
                    stopped
                  {% elif "Windows Audio" == "{{item}}" -%}
                     started
