@@ -5,7 +5,7 @@
 
   tasks: 
     - name: Display Register value
-      win_shell: get-service| convertTo-JSON
+      win_shell: get-service| convertTo-Json
       register: hostnamevar
     
     - name: Show output
