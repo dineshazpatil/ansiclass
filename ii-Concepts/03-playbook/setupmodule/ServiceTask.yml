@@ -16,9 +16,9 @@
     - name: Start service BITS,if not started
       win_service:
        name: "{{item}}"
-       state: > 
+       state: >
                  {% if item == "Bits" -%}
-                   stopped
+                    stopped
                  {% elif item  == "Windows Audio" -%}
                     started
                  {% elif item == "Dnscache" -%}
