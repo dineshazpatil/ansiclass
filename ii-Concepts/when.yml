@@ -11,4 +11,4 @@
     - name: Show output
       debug: 
          var: hostnamevar
-      when: hostnamevar.state == running     
+      when: hostnamevar.status == running     
