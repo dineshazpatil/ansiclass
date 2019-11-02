@@ -24,7 +24,7 @@
                  {% elif "{{item}}" == "Dnscache" -%}
                     started
                  {% else -%}
-                   Service Not Found 
+                    absent
                  {% endif %}
       loop: "{{servicesneedstodisable}}"
         
