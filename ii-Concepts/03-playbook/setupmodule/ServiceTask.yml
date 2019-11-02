@@ -14,9 +14,10 @@
     - Ext_variable.yml
   tasks:
     - name: Start service BITS,if not started
+      debug:
+        msg: >
       win_service:
        name: "{{item}}"
-       msg: >
        state:   
               {% for Serv in "{{servicesneedstodisable}}" %}  
                  {% if Serv == "BITS" %}
