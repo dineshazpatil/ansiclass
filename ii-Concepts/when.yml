@@ -10,4 +10,5 @@
     
     - name: Show output
       debug: 
-         var: "{{hostnamevar.status | from_json }}"
+         var: "{{hostnamevar.name | from_json }}"
+      when: hostnamevar == running 
