@@ -5,10 +5,10 @@
 
   tasks: 
     - name: Display Register value
-      win_shell: get-service
+      win_shell: get-service| convertTo-JSON
       register: hostnamevar
     
     - name: Show output
       debug: 
          var: hostnamevar
-      when: status == running     
+      "{{hostnamevar.status | from_json }}"   
