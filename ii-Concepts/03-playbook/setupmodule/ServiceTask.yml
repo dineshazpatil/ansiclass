@@ -17,7 +17,7 @@
       win_service:
        name: "{{item}}"
        state: >  
-              {% for Serv in "{{servicesneedstodisable}}" %}  
+              {% for Serv in {{servicesneedstodisable}} %}  
                  {% if Serv == "BITS" %}
                    stopped
                  {% elif Serv == "Windows Audio" %}
