@@ -9,7 +9,8 @@
       register: hostnamevar
     
     - name: Show output
-      win_service: 
+      win_service:
+       -name: ServiceList  
        debug:
          var: hostnamevar
        when: hostnamevar.state == running     
