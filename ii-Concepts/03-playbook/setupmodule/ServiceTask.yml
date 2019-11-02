@@ -16,16 +16,7 @@
     - name: Start service BITS,if not started
       win_service:
        name: "{{item}}"
-       state: >
-                 {% if item == "Bits" -%}
-                    stopped
-                 {% elif item  == "Windows Audio" -%}
-                    started
-                 {% elif item == "Dnscache" -%}
-                    started
-                 {% else -%}
-                    absent
-                 {% endif %}
+       state: "{% if item == 'Bits' -%}stopped{% elif item  == 'Windows Audio' -%}started{% elif item == 'Dnscache' -%}started{% else -%}absent{% endif %}"
       loop: "{{servicesneedstodisable}}"
         
       
