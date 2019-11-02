@@ -17,9 +17,9 @@
       win_service:
        name: "{{item}}"
        state: > 
-                 {% if "Bits" == "{{item}}" -%}
+                 {% if "item" == "Bits" -%}
                    stopped
-                 {% elif "Windows Audio" == "{{item}}" -%}
+                 {% elif "item"  == ""Windows Audio"" -%}
                     started
                  {% elif "{{item}}" == "Dnscache" -%}
                     started
