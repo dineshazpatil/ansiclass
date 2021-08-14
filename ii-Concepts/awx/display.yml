@@ -7,5 +7,5 @@
     - name: check Ip Address
       debug:
         msg: >
-             this is for windows {{ ansible_ip_addresses }}
+             this is for windows {{ ansible_default_ipv4.address }}
 ...
