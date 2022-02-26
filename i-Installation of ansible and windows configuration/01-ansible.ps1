@@ -30,8 +30,8 @@ sudo add-apt-repository --remove ppa:ansible/ansible
 
 # Flow for searching ansible configuration
 ANSIBLE_CFG: This is an environment variable
-~/ansible.cfg: This is in the current directory
-ansible.cfg: This is in the users home directory
+./ansible.cfg: This is in the current directory
+~/ansible.cfg: This is in the users home directory
 ./etc/ansible/ansible.cfg
 
 #refer Below link to refer more details on the ansible for windows
